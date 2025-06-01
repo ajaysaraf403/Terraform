@@ -10,6 +10,9 @@ jobs:
   terraform:
     name: Deploy Terraform Job
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
       # Pulls the latest version of your code from the GitHub repository
